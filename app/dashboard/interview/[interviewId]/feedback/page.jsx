@@ -46,9 +46,7 @@ function Feedback() {
           <h2 className="font-bold text-2xl">
             Here is Your Interview feedback
           </h2>
-          <h2 className="text-primary text-lg my-3">
-            Your overall Interview rating: <strong>7/10</strong>
-          </h2>
+         
           <h2 className="text-md text-gray-500">
             Find below interview question with correct answer, your answer, and
             feedback for improvement.
