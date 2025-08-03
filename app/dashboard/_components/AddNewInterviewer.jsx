@@ -89,7 +89,7 @@ function AddNewInterviewer() {
       >
         <h2 className=" text-lg text-center">+Add New</h2>
       </div>
-      <Dialog open={openDialog}>
+      <Dialog open={openDialog} onOpenChange={setOpenDialog}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
             <DialogTitle className="text-2xl">
