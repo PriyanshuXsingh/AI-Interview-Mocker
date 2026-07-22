@@ -1,7 +1,16 @@
 import OpenAI from "openai";
 
+const apiKey =
+  process.env.XAI_API_KEY || process.env.OPENAI_API_KEY;
+
+if (!apiKey) {
+  throw new Error(
+    "No API key found. Set XAI_API_KEY or OPENAI_API_KEY in Vercel."
+  );
+}
+
 const client = new OpenAI({
-  apiKey: process.env.XAI_API_KEY,
+  apiKey,
   baseURL: "https://api.x.ai/v1",
 });
 
